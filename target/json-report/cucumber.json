@@ -1,0 +1,109 @@
+[
+  {
+    "line": 1,
+    "elements": [
+      {
+        "start_timestamp": "2023-03-04T01:55:05.191Z",
+        "before": [
+          {
+            "result": {
+              "duration": 25000000,
+              "status": "passed"
+            },
+            "match": {
+              "location": "com.qa.facebook.automation_6th.apphooks.ApplicationHooks.getProperty()"
+            }
+          },
+          {
+            "result": {
+              "duration": 8183000000,
+              "status": "passed"
+            },
+            "match": {
+              "location": "com.qa.facebook.automation_6th.apphooks.ApplicationHooks.launchBrowser()"
+            }
+          }
+        ],
+        "line": 11,
+        "name": "Facebook Login Test",
+        "description": "",
+        "id": "facebook-features;facebook-login-test;;2",
+        "after": [
+          {
+            "result": {
+              "status": "passed"
+            },
+            "match": {
+              "location": "com.qa.facebook.automation_6th.apphooks.ApplicationHooks.tearDown(io.cucumber.java.Scenario)"
+            }
+          },
+          {
+            "result": {
+              "duration": 707000000,
+              "status": "passed"
+            },
+            "match": {
+              "location": "com.qa.facebook.automation_6th.apphooks.ApplicationHooks.quitBrowser()"
+            }
+          }
+        ],
+        "type": "scenario",
+        "keyword": "Scenario Outline",
+        "steps": [
+          {
+            "result": {
+              "duration": 2552000000,
+              "status": "passed"
+            },
+            "line": 5,
+            "name": "user is already on \"https://www.facebook.com/\" page",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"https://www.facebook.com/\"",
+                  "offset": 19
+                }
+              ],
+              "location": "com.qa.facebook.automation_6th.stepdefinitions.LoginPageSteps.user_is_already_on_page(java.lang.String)"
+            },
+            "keyword": "Given "
+          },
+          {
+            "result": {
+              "duration": 11000000,
+              "status": "passed"
+            },
+            "line": 6,
+            "name": "title of the facebook login page",
+            "match": {
+              "location": "com.qa.facebook.automation_6th.stepdefinitions.LoginPageSteps.title_of_the_facebook_login_page()"
+            },
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "status": "passed"
+            },
+            "line": 7,
+            "name": "close the browser",
+            "match": {
+              "location": "com.qa.facebook.automation_6th.stepdefinitions.LoginPageSteps.close_the_browser()"
+            },
+            "keyword": "Then "
+          }
+        ],
+        "tags": [
+          {
+            "name": "@RegressionTest"
+          }
+        ]
+      }
+    ],
+    "name": "Facebook Features",
+    "description": "",
+    "id": "facebook-features",
+    "keyword": "Feature",
+    "uri": "file:src/test/resources/AppFeatures/LoginPage.feature",
+    "tags": []
+  }
+]
